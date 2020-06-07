@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_tutorial"
+    app:startDestination="@id/tutorial1Fragment1">
+
+    <fragment
+        android:id="@+id/tutorial1Fragment1"
+        android:name="com.mitienda.proyecto.fragments.Tutorial1Fragment"
+        android:label="fragment_tutorial1"
+        tools:layout="@layout/fragment_tutorial1" >
+        <action
+            android:id="@+id/action_tutorial1Fragment2_to_tutorial2Fragment2"
+            app:destination="@id/tutorial2Fragment2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:popEnterAnim="@anim/fragment_fade_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorial2Fragment2"
+        android:name="com.mitienda.proyecto.fragments.Tutorial2Fragment"
+        android:label="fragment_tutorial2"
+        tools:layout="@layout/fragment_tutorial2" />
+</navigation>
